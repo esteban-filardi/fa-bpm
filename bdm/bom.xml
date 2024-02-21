@@ -33,7 +33,7 @@
                 <field type="INTEGER" length="255" name="validityMonths" nullable="false" collection="false">
                     <description>3, 6, 9 or 12 months</description>
                 </field>
-                <relationField type="AGGREGATION" reference="com.company.model.PurchaseOrderDeliveries" fetchType="LAZY" name="deliveries" nullable="true" collection="true"/>
+                <relationField type="COMPOSITION" reference="com.company.model.PurchaseOrderDeliveries" fetchType="EAGER" name="deliveries" nullable="true" collection="true"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
