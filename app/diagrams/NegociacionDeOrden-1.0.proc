@@ -212,7 +212,7 @@
       <formMapping xmi:type="process:FormMapping" xmi:id="_th909NLBEe65VqA0BgzCqA" type="NONE">
         <targetForm xmi:type="expression:Expression" xmi:id="_krceIdLXEe65VqA0BgzCqA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
-      <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_th909tLBEe65VqA0BgzCqA" type="NONE">
+      <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_th909tLBEe65VqA0BgzCqA">
         <targetForm xmi:type="expression:Expression" xmi:id="_th9099LBEe65VqA0BgzCqA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </overviewFormMapping>
       <connections xmi:type="process:SequenceFlow" xmi:id="_th90-NLBEe65VqA0BgzCqA" target="_th9059LBEe65VqA0BgzCqA" source="_p3hW4NLWEe65VqA0BgzCqA">
