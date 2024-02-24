@@ -26,6 +26,14 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.company.model.PlannedPurchasesReq">
+            <fields>
+                <field type="TEXT" length="255" name="plannedPurchasesReq" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.company.model.PurchaseOrder">
             <fields>
                 <field type="OFFSETDATETIME" length="255" name="createdDate" nullable="false" collection="false"/>
@@ -33,7 +41,7 @@
                 <field type="INTEGER" length="255" name="validityMonths" nullable="false" collection="false">
                     <description>3, 6, 9 or 12 months</description>
                 </field>
-                <relationField type="COMPOSITION" reference="com.company.model.PurchaseOrderDeliveries" fetchType="EAGER" name="deliveries" nullable="true" collection="true"/>
+                <relationField type="COMPOSITION" reference="com.company.model.PurchaseOrderDelivery" fetchType="EAGER" name="deliveries" nullable="true" collection="true"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -47,7 +55,7 @@
             <queries/>
             <indexes/>
         </businessObject>
-        <businessObject qualifiedName="com.company.model.PurchaseOrderDeliveries">
+        <businessObject qualifiedName="com.company.model.PurchaseOrderDelivery">
             <fields>
                 <field type="LONG" length="255" name="partNumber" nullable="false" collection="false">
                     <description>Simplifico asumiendo que es una sola parte por envio.</description>
