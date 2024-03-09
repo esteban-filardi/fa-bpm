@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "c76fab5d-f1e2-4740-9f96-4dfa618edd15",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1708744642664,
+  "lastUpdate" : 1710022918926,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -375,27 +375,27 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : ""
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "labelPosition" : {
+                        "disabled" : {
                           "type" : "constant",
-                          "value" : "top"
+                          "value" : false
                         },
-                        "cssClasses" : {
+                        "required" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : true
                         },
-                        "labelWidth" : {
+                        "allowHTML" : {
                           "type" : "constant",
-                          "value" : 1
+                          "value" : false
                         },
-                        "readOnly" : {
+                        "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
@@ -403,30 +403,40 @@
                           "type" : "interpolation",
                           "value" : "Validity Months"
                         },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
                         "placeholder" : {
+                          "type" : "interpolation"
+                        },
+                        "availableValues" : {
+                          "type" : "constant",
+                          "value" : [
+                            "3",
+                            "6",
+                            "9",
+                            "12"
+                          ]
+                        },
+                        "displayedKey" : {
                           "type" : "constant"
                         },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "number"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
+                        "returnedKey" : {
+                          "type" : "constant"
                         },
                         "value" : {
                           "type" : "variable",
                           "value" : "formInput.purchaseOrderInput.validityMonths"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
                         }
                       },
-                      "reference" : "dfc2d1a1-b138-48b2-9203-28f25633c1f7",
+                      "reference" : "0c24c521-c307-4513-aa1d-01da2bc804ea",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
+                      "id" : "pbSelect"
                     }
                   ],
                   [
